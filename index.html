@@ -1,20 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
+<!-- Start -->
 <head>
+    <!-- Display Config -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Website</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 
+    <!-- Display Design -->
+    <title>Tranformando o mundo</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="./assets/world_icon.png">
 </head>
 
 <body>
-    <div class="div_intro">
-        <h1 class="h1_one">Ações que mudam o</h1>
-        <img class="img_logo" src="./assets/world_intro.png">
-        <h1 class="h1_two">mundo</h1>
-    </div>
+    <!-- Introdução -->
+    <section class="container start__section" id="início">
+        <header class="start__header anim--start__header" >
+            <ul class="start__ul--items-list">
+                <li><a class="anim--start__a-item" href="#introdução">introdução</a></li>
+                <li><a class="anim--start__a-item" href="#atitudes">pequenas atitudes</a></li>
+                <li><a class="anim--start__a-item" href="#faça-isso">faça isso</a></li>
+            </ul>
+        </header>
+
+        <!-- SubTextos -->
+        <h1 class="start__h1--text anim--start__h1--text-1">Ações que mudam o</h1>
+        <img class="start__img--logo anim--start__img" src="./assets/world_logo.png" alt="Mundo">
+        <h1 class="start__h1--text start__h1-mundo anim--start__h1--text-2">mundo</h1>
+    </section>
+
+    <!-- Descrição -->
+    <section class="container description" id="introdução">
+        <span></span>
+        <div class="description__div--area-1"><h3 class="description__h3--text description__h3--position-1 anim--description__h3-text-1">Muitas vezes deixamos de fazer pequenas coisas que, se todos fizessem, tornaria o mundo em um lugar melhor para todos...</h3></div>
+        <span></span> <span></span> <span></span>
+        
+        <span></span>
+        <div class="description__div--area-2"><h3 class="description__h3--text description__h3--position-2 anim--description__h3-text-2">Vale ressaltar que você é muito importante para que essa mudança seja possível.</h3></div>
+        <span></span>
+    </section>
+
+    <!-- Seja ... só mais uma vez -->
+    <section class="container more" id="atitudes">
+        <h2 class="more__h2--title">Acredite, algumas atitudes são bem simples</h2>
+
+        <div class="more__div--images">
+            <img class="more__img--gif" src="./assets/be_better.gif" alt="Gif pedindo para sermos melhor só mais uma vez">
+            <img class="more__img--hand anim--more__img" src="./assets/hand_and_heart.png" alt="Mão com um coração em cima">
+        </div>
+    </section>
+
+    <!-- Links acessíveis -->
+    <section class="accessible" id="faça-isso">
+        <div onclick="show(1)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
+            <img src="./svg/heart.svg" alt="Ícone de coração"></img>
+            <p>Não estou bem...</p>
+        </div>
+
+        <div onclick="show(2)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
+            <img src="./svg/footprint.svg" alt="Ícone de patinha de cachorro"></img>
+            <p>Adote um animalzinho</p>
+        </div>
+
+        <div onclick="show(3)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
+            <img src="./svg/magnifying glass.svg" alt="Ícone de lupa"></img>
+            <p>Apenas uma pesquisa</p>
+        </div>
+
+        <div onclick="show(4)" class="accessible__buttons anim--accessible__buttons accessible__margin--2">
+            <img src="./svg/thumbside.svg" alt="Ícone de polegar para cima"></img>
+            <p>Seja positivo(a)</p>
+        </div>
+
+        <div onclick="show(5)" class="accessible__buttons anim--accessible__buttons accessible__margin--2">
+            <img src="./svg/person.svg" alt="Ícone de pessoa com sinal '+' ao lado"></img>
+            <p>Voluntarie-se</p>
+        </div>
+
+        <div onclick="show(6)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
+            <img src="./svg/recycle.svg" alt="Ícone de reciclagem"></img>
+            <p>Como reciclar?</p>
+        </div>
+        
+        <div onclick="show(7)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
+            <img src="./svg/lovepeople.svg" alt="Ícone de pessoas dentro de um coração"></img>
+            <p>Combata preconceitos</p>
+        </div>
+
+        <div onclick="show(8)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
+            <img src="./svg/judgment.svg" alt="Ícone de martelo de juíz"></img>
+            <p>Um dia sem julgar</p>
+        </div>
+
+        <div onclick="show(9)" class="accessible__buttons anim--accessible__buttons accessible__margin--2">
+            <img src="./svg/handlove.svg" alt="Ícone de mão com coração"></img>
+            <p>Apoie causas</p>
+        </div>
+
+        <div onclick="show(10)" class="accessible__buttons anim--accessible__buttons accessible__margin--2">
+            <img src="./svg/medicheart.svg" alt="Ícone de coração com batimento cardíaco"></img>
+            <p>Doe sangue</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer">
+            <img class="footer__img--logo" src="./assets/world_logo.png" alt="logo do mundo">
+
+            <div class="footer__div--texts">
+                <p>Feito por Gustavo Proença</p>
+                <P class="footer__p--text-2">Para Concurso Agrinho - 2023</P>
+            </div>
+
+            <a class="anim--footer__a--return" href="#início"><img class="footer__img--return" src="./svg/return.svg" alt="retornar ao topo"></a>
+        </div>
+    </footer>
+
+    <!-- Pop-ups -->
+    <section id="pop-up" class="pop-up">
+        <p id="paragraph" class="pop-up__p-text"></p>
+
+        <button onclick="hide()" class="pop-up__button-return">fechar</button>
+    </section>
+
+    <!-- Scripts -->
+    <script> 
+        const texts = [ 
+            'Se você não está se sentindo bem, quero lembrá-lo de algumas coisas importantes.<br><br>Primeiramente, saiba que não está sozinho. Todos passamos por momentos difíceis em nossas vidas, e é normal enfrentar desafios e emoções negativas de vez em quando.<br><br>É essencial cuidar de si mesmo durante esses períodos. Lembre-se de que sua saúde mental e emocional são tão importantes quanto sua saúde física.<br><br><a class=\'color-link\' target=\'_blank\' href=\'https://www.cvv.org.br/\'>www.cvv.org.br</a>',
+            'Adotar um pet permite trazer maior felicidade para o lar, que pode diminuir as chances de você ter ansiedade ou depressão. <br><br>Além de que, se você adotar um cachorro ou um gato abandonado nas ruas, você está dando a chance deles terem um lar, corforto e saúde. E como recompensa você recebe amor incondicional desses bichinhos.<br><br><a class=\'color-link\' target=\'_blank\' href=\'https://www.adotepetz.com.br\'>www.adotepetz.com.br</a>',
+            '<span class=\'color-blue\'>Ecosia</span> é um mecanismo de busca semelhante ao Google que promete plantar árvores com o dinheiro arrecadado através de suas pesquisas no buscador. Ao todo, foram plantadas mais de 112 milhões de árvores pelo mundo.<br><br>A maneira como arrecadam e usam o dinheiro é bastante transparente: todo mês enviam um relatório mostrando o valor arrecadado pelas pesquisas e a quantia investida em plantios de árvores.<br><br><a class=\'color-link\' target=\'_blank\' href=\'https://www.ecosia.org\'>www.ecosia.org</a>',
+            'O pensamento positivo está associado a um melhor estado emocional. Então, ser otimista e focar nas coisas boas da vida pode aumentar sua felicidade, reduzir o estresse e a ansiedade, e melhorar seu bem-estar.<br><br>Estudos mostram que o otimismo e uma atitude positiva podem ter um impacto positivo na saúde física, já que pessoas positivas tendem a ter um sistema imunológico mais forte e menor risco de doenças cardiovasculares.',
+            'O voluntariado desempenha um papel crucial na construção de comunidades mais fortes e solidárias, uma vez que contribui para o desenvolvimento e o bem-estar da sua comunidade.<br><br>Ao ser voluntário você pode desenvolver melhores e variadas habilidades, como liderança, trabalho em equipe, comunicação, entre outros. <br><br>Além disso, pode ajudar a manter sua rede de contatos amplificada, o que pode abrir boas oportunidades  no futuro.',
+            'Sempre jogue aquele papelzinho de bala que fica na sua mão no lixo. Até este simples ato pode fazer uma grande diferença no nosso futuro.<br><br>“Há 5 cores de lixeiras aqui, qual é a correta?”<br><span class=\'color-blue\'>Azul</span>: Papeis e papelões<br><span class=\'color-red\'>Vermelho</span>: Plásticos<br><span class=\'color-green\'>Verde</span>: Vidros<br><span class=\'color-yellow\'>Amarelo</span>: Metais<br><span class=\'color-brown\'>Marrom</span>: Orgânicos',
+            'Combater preconceitos é de extrema importância para a construção de uma sociedade mais justa, inclusiva e igualitária.<br><br>Quando determinados grupos são estigmatizados e marginalizados, são negadas a eles as oportunidades de educação, emprego, saúde e outros aspectos fundamentais. <br><br>Sendo muitas vezes uma das principais causas de conflitos sociais, discriminação e violência. Ao combatê-lo, estamos construindo uma sociedade mais pacífica, onde o respeito, a compreensão mútua e a cooperação são valorizados.',
+            'Ao julgarmos alguém, corremos o risco de sermos injustos e de acabar cometendo erros de interpretação. Além disso, julgar alguém pode nos fazer ter sentimentos negativos como raiva, ressentimento e ser hostil, que afetam nossa saúde mental e nosso bem-estar.<br><br>um conselho importante para evitar julgar os outros é tentar desenvolver a empatia - tentar se colocar no lugar do outro e entender como eles podem estar se sentindo.<br><br><a class=\'color-link\' target=\'_blank\' href=\'https://www.psicologiasemfronteiras.com.br/2021/11/nao-devemos-julgar-os-outros-porque.html\'>www.psicologiasemfronteiras.com.br</a>',
+            'Apoiar causas sociais pode fazer bem para quem é ajudado e quem ajuda.<br>Ajudar o próximo pode te fazer experimentar um senso de propósito e realização, sabendo que está fazendo algo significativo e impactante.<br><br>A primeira dica para defender uma causa é adotar medidas no seu dia a dia. Por exemplo, se você apoia uma causa que é contra o descarte incorreto de lixo, comece jogando o lixo em lugares corretos.<br><br>A segunda dica é ajudar financeira ou voluntariamente em ONGs (doe aquela roupa que não lhe serve mais).',
+            'A doação de sangue é essencial para o funcionamento de serviços de saúde e hospitais. Ao doar sangue, você está ajudando a salvar vidas de pessoas que necessitam de transfusões, seja devido a acidentes, cirurgias, tratamento de doenças graves, entre outros. Uma única doação pode beneficiar várias pessoas necessitadas.<br><br>Segundo o blog em <a class=\'color-link\' target=\'_blank\' href=\'https://www.padrao.com.br/blog/faca-o-bem-veja-quais-sao-os-principais-beneficios-de-doar-sangue\'>padrao.com.br</a>, “com a doação, há uma renovação das células, o que pode contribuir para a redução dos riscos de desenvolver câncer no pulmão, fígado e garganta. Ou seja, é um enorme benefício para a saúde pessoal.” <br><br><a class=\'color-link\' target=\'_blank\' href=\'https://hemobanco.com.br/site/\'>hemobanco.com.br/site/</a>',
+        ];
+
+        const htmlPopUp = document.getElementById('pop-up');
+        const htmlP = document.getElementById('paragraph');
+
+        function show(value) {
+            const text = texts[--value];
+            
+            htmlP.innerHTML = text;
+            document.body.style.overflowY = 'hidden';
+            htmlPopUp.style.display = 'grid';
+
+            htmlPopUp.animate(
+                [{ transform: 'scaleX(1)', opacity: 1 }],
+                { duration: 250, fill: "forwards" });
+
+            htmlP.animate([{ opacity: 1 }],
+                { duration: 250, fill: "forwards", delay: 200 });
+        }
+
+        function hide() {
+            document.body.style.overflowY = 'auto';
+
+            htmlPopUp.animate([{ transform: 'scaleX(0)', opacity: 0}],
+                { duration: 250, fill: "forwards", delay: 250 });
+
+            htmlP.animate([{ opacity: 0 }],
+                { duration: 250, fill: "forwards"});
+            setTimeout(() => htmlPopUp.style.display = "none", 500);
+        }
+    </script>
 </body>
 </html>
