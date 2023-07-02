@@ -7,6 +7,7 @@
 
     --color-bg-primary: #101117;
     --color-bg-secundary: #0C0D14;
+    --color-bg-tertiary: #080514;
     --color-bg-buttons: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(166, 113, 255, 0.1), rgba(255, 0, 0, 0));
 
     --font-principal: 'Kanit', sans-serif;
@@ -32,7 +33,8 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 12px;
+    width: 1vw;
+    background-color: var(--color-bg-secundary);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -55,22 +57,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .start__ul--items-list {
-    width: 50vw;
     background-color: var(--color-bg-secundary);
     display: flex;
 
-    margin: auto;
+    margin: 0 auto;
     padding: 1.5em 0;
 
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
-    font-size: 24px;
+    font-size: 4vh;
     font-weight: 600;
     list-style-type: none;
 }
 
 .start__ul--items-list a, .start__ul--items-list li {
+    margin: 0 3vw;
     background-color: var(--color-bg-secundary);
     color: var(--color-link);
     text-decoration: none;
@@ -79,12 +81,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .start__h1--text {
-    font-size: 64px;
+    font-size: 9vh;
     font-weight: var(--font-weight-regular);
 }
 
 .start__img--logo {
-    width: 20vw;
+    width: 40vh;
 }
 
 .start__h1-mundo {
@@ -136,9 +138,8 @@ body::-webkit-scrollbar-thumb {
 .anim--start__img {
     opacity: 0;
     transform: translateX(50px);
-    animation: fadein 1s forwards 0.5s;
+    animation: fadein 1s forwards 0.5s, rotate 4s ease-in-out infinite alternate, transparence 3s ease-in-out infinite alternate;
 }
-
 
 .anim--start__h1--text-2 {
     opacity: 0;
@@ -149,7 +150,7 @@ body::-webkit-scrollbar-thumb {
 
 .description {
     display: grid;
-    grid-template-columns: 26% 24% 24% 26%;
+    grid-template-columns: 23% 27% 27% 23%;
 }
 
 .description__div--area-1 {
@@ -165,7 +166,7 @@ body::-webkit-scrollbar-thumb {
 
 .description__h3--text {
     display: flex;
-    font-size: 24px;
+    font-size: 3.9vh;
     font-weight: var(--font-weight-regular);
 }
 
@@ -193,11 +194,11 @@ body::-webkit-scrollbar-thumb {
 
 .more__h2--title {
     margin: 0 auto;
-    width: 45vw;
+    width: 50vw;
     text-align: center;
+    font-size: 6vh;
 
     font-weight: var(--font-weight-bold);
-    font-size: 44px;
     color: var(--color-secundary);
 }
 
@@ -220,7 +221,18 @@ body::-webkit-scrollbar-thumb {
     animation: updown 2s ease-in-out 0s alternate infinite;
 }
 
+.accessible__background-barra {
+    display: block;
+    width: 100%;
+    margin-bottom: -1px;
+}
+
+.accessible__background {
+    background-color: var(--color-bg-tertiary);
+}
+
 .accessible {
+    padding-top: 10vw;
     margin: 0 10vw;
     display: flex;
     flex-wrap: wrap;
@@ -228,12 +240,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .accessible__buttons {
-    height: 246px;
+    height: 37vh;
     width: 16.5vw;
     margin-bottom: 3em;
 
     font-weight: var(--font-weight-semibold);
-    font-size: 24px;
+    font-size: 1.7vw;
     color: var(--color-button);
     border: none;
 
@@ -247,6 +259,7 @@ body::-webkit-scrollbar-thumb {
 
 .accessible__buttons img {
     background-color: transparent;
+    width: 6vw;
 }
 
 .accessible__buttons::after {
@@ -276,11 +289,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .accessible__margin--1 {
-    margin: 5% 5%;
+    margin: 5% 6%;
 }
 
 .accessible__margin--2 {
-    margin: 5% 8%;
+    margin: 5% 7%;
 }
 
 .anim--accessible__buttons {
@@ -321,24 +334,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 footer {
-    margin-top: 3em;
     background-color: var(--color-bg-secundary);
 }
 
 .footer {
     background-color: var(--color-bg-secundary);
     margin: 0 23vw;
+    padding: 1vw 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .footer__img--logo {
     width: 5vw;
     background-color: transparent;
 }
 
 .footer__div--texts {
-    font-size: 24px;
+    font-size: 1.75vw;
     text-align: center;
     font-weight: var(--font-weight-semibold);
 }
@@ -353,12 +367,13 @@ footer {
 
 .footer__img--return {
     background-color: transparent;
+    width: 4vw;
 }
 
 .anim--footer__a--return {
     background-color: transparent;
-    display: block;
     position: relative;
+    display: block;
     transition: transform 0.5s;
 }
 
@@ -366,8 +381,10 @@ footer {
     content: 'voltar';
 
     position: absolute;
-    left: 20px;
-    bottom: 5px;
+    text-align: center;
+    font-size: 1.2vw;
+    bottom: -20%;
+    left: 15%;
 
     opacity: 0;
     transform: translateY(-10px);
@@ -399,26 +416,25 @@ footer {
     background-color: var(--color-bg-secundary);
     border-radius: 30px;
     border: solid 5px var(--color-icons);
-    box-shadow: 0 0 10px white;
 
     transform: scaleX(0);
     opacity: 0;
 }
 
 .pop-up__p-text {
-    margin: 32px;
+    margin: 1.5vw;
 
     overflow-y: auto;
     background-color: var(--color-bg-secundary);
 
-    font-size: 30px;
+    font-size: 2.3vw;
     font-weight: var(--font-weight-regular);
 
     opacity: 0;
 }
 
 .pop-up__p-text::-webkit-scrollbar {
-    width: 12px;
+    width: 1vw;
 }
 
 .pop-up__p-text::-webkit-scrollbar-thumb {
@@ -436,7 +452,7 @@ footer {
     background-color: var(--color-bg-secundary);
 
     font-weight: var(--font-weight-semibold);
-    font-size: 48px;
+    font-size: 4vw;
 
     border-radius: 10px;
     border: solid 5px var(--color-icons);
@@ -469,10 +485,10 @@ footer {
     transform: translateX(-50%) scaleX(0);
     transition: transform 0.5s;
 }
+
 .color-link:hover::after {
     transform: translateX(0) scaleX(1);
 }
-
 .color-secundary {
     color: var(--color-secundary);
 }
@@ -509,9 +525,33 @@ footer {
     }
 }
 
+@keyframes rotate {
+    from {
+        transform: rotateZ(-10deg);
+    }
+    to {
+        transform: rotateZ(10deg);
+    }
+}
+
+@keyframes transparence {
+    from {
+        opacity: 65%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .container {
-        min-height: 90vh;
+        min-height: 100vh;
+    }
+
+    .start__section {
+        display: flex;
+        flex-direction: column;
     }
 
     .start__header {
@@ -520,22 +560,29 @@ footer {
     }
     
     .start__ul--items-list {
-        padding: 1em 0;
+        padding: 0.1em 0;
         display: block;
         width: auto;
     }
 
     .start__ul--items-list li {
         display: flex;
-        justify-content: start;
+        justify-content: center;
+        font-size: 5vw;
+    }
+
+    .start__div--subtexts {
+        margin-top: 10vh;
     }
 
     .start__h1--text {
-        font-size: 45px;
+        font-size: 9vw;
+        margin-bottom: 5vh;
         padding: 0 1em;
     }
 
     .start__img--logo {
+        margin-bottom: 5vh;
         width: 50vw;
     }
 
@@ -547,10 +594,11 @@ footer {
 
     .description__h3--text {
         margin: 2em;
+        font-size: 3vh;
     }
 
     .more__h2--title {
-        font-size: 28px;
+        font-size: 7vw;
         width: auto;
         margin: 0 auto;
         padding: 0 0.5em;
@@ -576,12 +624,20 @@ footer {
     }
 
     .accessible__buttons {
-        width: 40vw;
-        height: 225px;
+        width: 35vw;
+        height: 25vh;
     }
 
     .accessible__margin--1, .accessible__margin--2 {
-        margin: 2em 0.5em;
+        margin: 3vh 6vw;
+    }
+
+    .accessible__buttons img {
+        width: 15vw;
+    }
+
+    .accessible__buttons p { 
+        font-size: 4.5vw;
     }
 
     .accessible__buttons::after {
@@ -591,19 +647,20 @@ footer {
 
     .pop-up__p-text {
         width: auto;
-        font-size: 24px;
+        font-size: 5.5vw;
         font-weight: 100;
         line-height: 1.2em;
 
         margin: 1.2em;
         margin-right: 0.5em;
-        padding-right: 0.5em;
         margin-bottom: 0.5em;
+
+        padding-right: 0.5em;
         padding-bottom: 0.5em;
     }
-    
-    .pop-up__p-text::-webkit-scrollbar-track {
-        background-color: transparent;
+
+    .pop-up__button-return {
+        font-size: 9vw;
     }
 
     .footer {
@@ -617,19 +674,25 @@ footer {
     }
 
     .footer__div--texts {
-        font-size: 20px;
+        font-size: 4.5vw;
     }
 
     .footer__p--text-2 {
-        font-size: 18px;
+        font-size: 4vw;
+    }
+
+    .footer__img--return {
+        width: 13vw;
+        margin-bottom: 5%;
     }
 
     .anim--footer__a--return::after {
         content: 'voltar';
 
         position: absolute;
-        left: 20px;
-        bottom: 0;
+        font-size: 4vw;
+        left: 10%;
+        bottom: -25%;
         opacity: 1;
     }
 
