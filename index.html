@@ -15,7 +15,7 @@
 
     <!-- Display Design -->
     <title>Tranformando o mundo</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
     <link rel="icon" href="./assets/world_icon.png">
 </head>
 
@@ -31,9 +31,11 @@
         </header>
 
         <!-- SubTextos -->
-        <h1 class="start__h1--text anim--start__h1--text-1">Ações que mudam o</h1>
-        <img class="start__img--logo anim--start__img" src="./assets/world_logo.png" alt="Mundo">
-        <h1 class="start__h1--text start__h1-mundo anim--start__h1--text-2">mundo</h1>
+        <div class="start__div--subtexts">
+            <h1 class="start__h1--text anim--start__h1--text-1">Ações que mudam o</h1>
+            <img class="start__img--logo anim--start__img" src="./assets/world_logo.png" alt="Mundo">
+            <h1 class="start__h1--text start__h1-mundo anim--start__h1--text-2">mundo</h1>
+        </div>
     </section>
 
     <!-- Descrição -->
@@ -57,58 +59,62 @@
         </div>
     </section>
 
+    <img class="accessible__background-barra" src="assets/barra_separadora.png" alt="Desing que indica o começo da seção de botões"></img>
+
     <!-- Links acessíveis -->
-    <section class="accessible" id="faça-isso">
-        <div onclick="show(1)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
-            <img src="./svg/heart.svg" alt="Ícone de coração"></img>
-            <p>Não estou bem...</p>
-        </div>
+    <div class="accessible__background">
+        <section class="accessible" id="faça-isso">
+            <div onclick="show(1)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
+                <img src="./svg/heart.svg" alt="Ícone de coração"></img>
+                <p>Não estou bem...</p>
+            </div>
 
-        <div onclick="show(2)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
-            <img src="./svg/footprint.svg" alt="Ícone de patinha de cachorro"></img>
-            <p>Adote um animalzinho</p>
-        </div>
+            <div onclick="show(2)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
+                <img src="./svg/footprint.svg" alt="Ícone de patinha de cachorro"></img>
+                <p>Adote um animalzinho</p>
+            </div>
 
-        <div onclick="show(3)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
-            <img src="./svg/magnifying glass.svg" alt="Ícone de lupa"></img>
-            <p>Apenas uma pesquisa</p>
-        </div>
+            <div onclick="show(3)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
+                <img src="./svg/magnifying glass.svg" alt="Ícone de lupa"></img>
+                <p>Apenas uma pesquisa</p>
+            </div>
 
-        <div onclick="show(4)" class="accessible__buttons anim--accessible__buttons accessible__margin--2">
-            <img src="./svg/thumbside.svg" alt="Ícone de polegar para cima"></img>
-            <p>Seja positivo(a)</p>
-        </div>
+            <div onclick="show(4)" class="accessible__buttons anim--accessible__buttons accessible__margin--2">
+                <img src="./svg/thumbside.svg" alt="Ícone de polegar para cima"></img>
+                <p>Seja positivo(a)</p>
+            </div>
 
-        <div onclick="show(5)" class="accessible__buttons anim--accessible__buttons accessible__margin--2">
-            <img src="./svg/person.svg" alt="Ícone de pessoa com sinal '+' ao lado"></img>
-            <p>Voluntarie-se</p>
-        </div>
+            <div onclick="show(5)" class="accessible__buttons anim--accessible__buttons accessible__margin--2">
+                <img src="./svg/person.svg" alt="Ícone de pessoa com sinal '+' ao lado"></img>
+                <p>Voluntarie-se</p>
+            </div>
 
-        <div onclick="show(6)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
-            <img src="./svg/recycle.svg" alt="Ícone de reciclagem"></img>
-            <p>Como reciclar?</p>
-        </div>
-        
-        <div onclick="show(7)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
-            <img src="./svg/lovepeople.svg" alt="Ícone de pessoas dentro de um coração"></img>
-            <p>Combata preconceitos</p>
-        </div>
+            <div onclick="show(6)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
+                <img src="./svg/recycle.svg" alt="Ícone de reciclagem"></img>
+                <p>Como reciclar?</p>
+            </div>
+            
+            <div onclick="show(7)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
+                <img src="./svg/lovepeople.svg" alt="Ícone de pessoas dentro de um coração"></img>
+                <p>Combata preconceitos</p>
+            </div>
 
-        <div onclick="show(8)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
-            <img src="./svg/judgment.svg" alt="Ícone de martelo de juíz"></img>
-            <p>Um dia sem julgar</p>
-        </div>
+            <div onclick="show(8)" class="accessible__buttons anim--accessible__buttons accessible__margin--1">
+                <img src="./svg/judgment.svg" alt="Ícone de martelo de juíz"></img>
+                <p>Um dia sem julgar</p>
+            </div>
 
-        <div onclick="show(9)" class="accessible__buttons anim--accessible__buttons accessible__margin--2">
-            <img src="./svg/handlove.svg" alt="Ícone de mão com coração"></img>
-            <p>Apoie causas</p>
-        </div>
+            <div onclick="show(9)" class="accessible__buttons anim--accessible__buttons accessible__margin--2">
+                <img src="./svg/handlove.svg" alt="Ícone de mão com coração"></img>
+                <p>Apoie causas</p>
+            </div>
 
-        <div onclick="show(10)" class="accessible__buttons anim--accessible__buttons accessible__margin--2">
-            <img src="./svg/medicheart.svg" alt="Ícone de coração com batimento cardíaco"></img>
-            <p>Doe sangue</p>
-        </div>
-    </section>
+            <div onclick="show(10)" class="accessible__buttons anim--accessible__buttons accessible__margin--2">
+                <img src="./svg/medicheart.svg" alt="Ícone de coração com batimento cardíaco"></img>
+                <p>Doe sangue</p>
+            </div>
+        </section>
+    </div>
 
     <!-- Rodapé -->
     <footer>
