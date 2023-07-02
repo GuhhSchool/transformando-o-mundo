@@ -352,7 +352,7 @@ footer {
 }
 
 .footer__div--texts {
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     text-align: center;
     font-weight: var(--font-weight-semibold);
 }
