@@ -27,7 +27,7 @@
 html {
     scroll-behavior: smooth;
 }
-
+        
 body {
     background-color: var(--color-bg-primary);
 }
@@ -229,10 +229,10 @@ body::-webkit-scrollbar-thumb {
 
 .accessible__background {
     background-color: var(--color-bg-tertiary);
+    padding-top: 5vw;
 }
 
 .accessible {
-    padding-top: 10vw;
     margin: 0 10vw;
     display: flex;
     flex-wrap: wrap;
@@ -619,8 +619,13 @@ footer {
         width: 30vw;
     }
 
+    .accessible__background {
+        padding-top: 0;
+    }
+
     .accessible {
         margin: 0 auto;
+        padding-top: 10vw;
     }
 
     .accessible__buttons {
